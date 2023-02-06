@@ -1,0 +1,61 @@
+@keyframes firends_mouse_hover{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.user-component{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-component:hover{
+    animation: firends_mouse_hover 1.5s ease-in-out infinite;
+}
+
+.user-component__column{
+    display: flex;
+    align-items: center;
+}
+
+.user-component__column:last-child{
+    color: var(--gray-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.user-component__time{
+    margin-bottom: 5px;
+}
+
+
+.user-component__avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.user-component__avatar-xl{
+    width: 80px;
+    height: 80px;
+}
+.user-component__avatar-s{
+    width: 50px;
+    height: 50px;
+}
+
+.user-component__title{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.user-component__subtitle{
+    color: rgb(74, 74, 74);
+}
